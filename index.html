@@ -31,7 +31,8 @@
           <div class="profile__info">
             <h1 class="profile__title">Jacques Cousteau</h1>
             <button
-              class="profile__edit-button"
+              class="profile__edit-button" 
+              id="profile-edit-button"
               aria-label="edit"
               type="button"
             ></button>
@@ -143,13 +144,23 @@
       </footer>
     </div>
     
-    <div class="modal">
+    <div class="modal" id="profile-edit-modal">
       <div class="modal__container">
-        <button class="modal__close"></button>
+        <button class="modal__close" id="modal__close-button"></button>
         <p class="modal__heading"> Edit Profile</p>
         <form class="modal__form">
-          <input type="text" name="title">
-          <input type="text" name="description">
+          <input
+          class="modal__form-name modal__form-name_profile"
+          type="text"
+          name="Name"
+          placeholder="Name"
+        />
+        <input
+          class="modal__form-description modal__form-description_profile"
+          type="text"
+          name="About me"
+          placeholder="Description"
+        />
           <button class="modal__button">Save</button>
         </form>
       </div>
