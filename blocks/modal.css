@@ -1,4 +1,4 @@
-.modal{
+.modal {
 position: fixed;
 background-color: rgba(0, 0, 0, 0.5);
 top: 0;
@@ -9,6 +9,7 @@ z-index: 999;
 display: flex;
 align-items: center;
 justify-content: center;
+visibility: hidden;
 }
 
 .modal__container {
@@ -36,7 +37,7 @@ justify-content: center;
     position: absolute;
   }
 
-.modal__close:hover{
+.modal__close:hover {
     opacity: 0.8;
     cursor: pointer;
 }
@@ -58,6 +59,11 @@ justify-content: center;
   .modal__button:hover {
     cursor: pointer;
     opacity: 0.8;
+  }
+
+  .modal_opened {
+    display: flex;
+    visibility: visible;
   }
 
   .modal__form {
